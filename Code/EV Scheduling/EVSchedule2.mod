@@ -1,21 +1,21 @@
-set Hours 		ordered;							#Time slots (24 hours)
-set EVs 		ordered;							#Electric vehicles
-set Household 	ordered;							#House holds
-set Cluster		ordered;							#Set of cluster of houses
+set Hours 		ordered;							              #Time slots (24 hours)
+set EVs 		ordered;							                #Electric vehicles
+set Household 	ordered;							            #House holds
+set Cluster		ordered;							              #Set of cluster of houses
 #set ChargerType;							
-set EVHousehold {Household} within EVs;				#EV associated with each consumer
-set ClusterHouse {Cluster}	within Household;		#Consumers in each cluster
+set EVHousehold {Household} within EVs;				    #EV associated with each consumer
+set ClusterHouse {Cluster}	within Household;		  #Consumers in each cluster
 
-param Demand {EVs};									#Forecasted demand of the EV 
-param DemandHousehold {Household};					#Forecasted demand of the household
-param SOC_Final {EVs};								#Consumer provided State of Charge (SOC)
+param Demand {EVs};									              #Forecasted demand of the EV 
+param DemandHousehold {Household};					      #Forecasted demand of the household
+param SOC_Final {EVs};								            #Consumer provided State of Charge (SOC)
 param Charger {EVs};
 
-param Energy_price {Hours};							#Day-Ahead energy price
+param Energy_price {Hours};							          #Day-Ahead energy price
 
-param Consumer {EVs, Hours};						#Consumer preferred timing for charging
+param Consumer {EVs, Hours};						          #Consumer preferred timing for charging
 
-var Schedule { EVs, Hours} >= 0;					#Schedule for each EV 
+var Schedule { EVs, Hours} >= 0;					        #Schedule for each EV 
 
 
 # Minimize the cost of charging for all the EVs
