@@ -1,0 +1,1855 @@
+# To represent the change in time
+
+set Household 	:= Household1	Household2	Household3	Household4	Household5	Household6	Household7	Household8	Household9	Household10	Household11	Household12	Household13	Household14	Household15	Household16	Household17	Household18	Household19	Household20	Household21	Household22	Household23	Household24	Household25	Household26	Household27	Household28	Household29	Household30	Household31	Household32	Household33	Household34	Household35	Household36	Household37	Household38	Household39	Household40	Household41	Household42	Household43	Household44	Household45	Household46	Household47	Household48	Household49	Household50	Household51	Household52	Household53	Household54	Household55	Household56	Household57	Household58	Household59	Household60	Household61	Household62	Household63	Household64	Household65	Household66	Household67	Household68	Household69	Household70	Household71	Household72	Household73	Household74	Household75	Household76	Household77	Household78	Household79	Household80	Household81	Household82	Household83	Household84	Household85	Household86	Household87	Household88	Household89	Household90	Household91	Household92	Household93	Household94	Household95	Household96	Household97	Household98	Household99	Household100	Household101	Household102	Household103	Household104	Household105	Household106	Household107	Household108	Household109	Household110	Household111	Household112	Household113	Household114	Household115	Household116	Household117	Household118	Household119	Household120	Household121	Household122	Household123	Household124	Household125	Household126	Household127	Household128	Household129	Household130	Household131	Household132	Household133	Household134	Household135	Household136	Household137	Household138	Household139	Household140	Household141	Household142	Household143	Household144	Household145	Household146	Household147	Household148	Household149	Household150	Household151	Household152	Household153	Household154	Household155	Household156	Household157	Household158	Household159	Household160	Household161	Household162	Household163	Household164	Household165	Household166	Household167	Household168	Household169	Household170	Household171	Household172	Household173	Household174	Household175	Household176	Household177	Household178	Household179	Household180	Household181	Household182	Household183	Household184	Household185	Household186	Household187	Household188	Household189	Household190	Household191	Household192	Household193	Household194	Household195	Household196	Household197	Household198	Household199	Household200 ;
+set EVs 		:= Vehicle1	Vehicle2	Vehicle3	Vehicle4	Vehicle5	Vehicle6	Vehicle7	Vehicle8	Vehicle9	Vehicle10	Vehicle11	Vehicle12	Vehicle13	Vehicle14	Vehicle15	Vehicle16	Vehicle17	Vehicle18	Vehicle19	Vehicle20	Vehicle21	Vehicle22	Vehicle23	Vehicle24	Vehicle25	Vehicle26	Vehicle27	Vehicle28	Vehicle29	Vehicle30	Vehicle31	Vehicle32	Vehicle33	Vehicle34	Vehicle35	Vehicle36	Vehicle37	Vehicle38	Vehicle39	Vehicle40	Vehicle41	Vehicle42	Vehicle43	Vehicle44	Vehicle45	Vehicle46	Vehicle47	Vehicle48	Vehicle49	Vehicle50	Vehicle51	Vehicle52	Vehicle53	Vehicle54	Vehicle55	Vehicle56	Vehicle57	Vehicle58	Vehicle59	Vehicle60	Vehicle61	Vehicle62	Vehicle63	Vehicle64	Vehicle65	Vehicle66	Vehicle67	Vehicle68	Vehicle69	Vehicle70	Vehicle71	Vehicle72	Vehicle73	Vehicle74	Vehicle75	Vehicle76	Vehicle77	Vehicle78	Vehicle79	Vehicle80	Vehicle81	Vehicle82	Vehicle83	Vehicle84	Vehicle85	Vehicle86	Vehicle87	Vehicle88	Vehicle89	Vehicle90	Vehicle91	Vehicle92	Vehicle93	Vehicle94	Vehicle95	Vehicle96	Vehicle97	Vehicle98	Vehicle99	Vehicle100	Vehicle101	Vehicle102	Vehicle103	Vehicle104	Vehicle105	Vehicle106	Vehicle107	Vehicle108	Vehicle109	Vehicle110	Vehicle111	Vehicle112	Vehicle113	Vehicle114	Vehicle115	Vehicle116	Vehicle117	Vehicle118	Vehicle119	Vehicle120	Vehicle121	Vehicle122	Vehicle123	Vehicle124	Vehicle125	Vehicle126	Vehicle127	Vehicle128	Vehicle129	Vehicle130	Vehicle131	Vehicle132	Vehicle133	Vehicle134	Vehicle135	Vehicle136	Vehicle137	Vehicle138	Vehicle139	Vehicle140	Vehicle141	Vehicle142	Vehicle143	Vehicle144	Vehicle145	Vehicle146	Vehicle147	Vehicle148	Vehicle149	Vehicle150	Vehicle151	Vehicle152	Vehicle153	Vehicle154	Vehicle155	Vehicle156	Vehicle157	Vehicle158	Vehicle159	Vehicle160	Vehicle161	Vehicle162	Vehicle163	Vehicle164	Vehicle165	Vehicle166	Vehicle167	Vehicle168	Vehicle169	Vehicle170	Vehicle171	Vehicle172	Vehicle173	Vehicle174	Vehicle175	Vehicle176	Vehicle177	Vehicle178	Vehicle179	Vehicle180	Vehicle181	Vehicle182	Vehicle183	Vehicle184	Vehicle185	Vehicle186	Vehicle187	Vehicle188	Vehicle189	Vehicle190	Vehicle191	Vehicle192	Vehicle193	Vehicle194	Vehicle195	Vehicle196	Vehicle197	Vehicle198	Vehicle199	Vehicle200	Vehicle201	Vehicle202	Vehicle203	Vehicle204	Vehicle205	Vehicle206	Vehicle207	Vehicle208	Vehicle209	Vehicle210	Vehicle211	Vehicle212	Vehicle213	Vehicle214	Vehicle215	Vehicle216	Vehicle217	Vehicle218	Vehicle219	Vehicle220	Vehicle221	Vehicle222	Vehicle223	Vehicle224	Vehicle225	Vehicle226	Vehicle227	Vehicle228	Vehicle229	Vehicle230	Vehicle231	Vehicle232	Vehicle233	Vehicle234	Vehicle235	Vehicle236	Vehicle237	Vehicle238	Vehicle239	Vehicle240	Vehicle241	Vehicle242	Vehicle243	Vehicle244	Vehicle245	Vehicle246	Vehicle247	Vehicle248	Vehicle249	Vehicle250	Vehicle251	Vehicle252	Vehicle253	Vehicle254	Vehicle255	Vehicle256	Vehicle257	Vehicle258	Vehicle259	Vehicle260	Vehicle261	Vehicle262	Vehicle263	Vehicle264	Vehicle265	Vehicle266	Vehicle267	Vehicle268	Vehicle269	Vehicle270	Vehicle271	Vehicle272	Vehicle273	Vehicle274	Vehicle275	Vehicle276	Vehicle277	Vehicle278	Vehicle279	Vehicle280	Vehicle281	Vehicle282	Vehicle283	Vehicle284	Vehicle285	Vehicle286	Vehicle287	Vehicle288	Vehicle289	Vehicle290	Vehicle291	Vehicle292	Vehicle293	Vehicle294	Vehicle295	Vehicle296	Vehicle297	Vehicle298	Vehicle299	Vehicle300	Vehicle301	Vehicle302	Vehicle303	Vehicle304	Vehicle305	Vehicle306	Vehicle307	Vehicle308	Vehicle309	Vehicle310	Vehicle311	Vehicle312	Vehicle313	Vehicle314	Vehicle315	Vehicle316	Vehicle317	Vehicle318	Vehicle319	Vehicle320	Vehicle321	Vehicle322	Vehicle323	Vehicle324	Vehicle325	Vehicle326	Vehicle327	Vehicle328	Vehicle329	Vehicle330	Vehicle331	Vehicle332	Vehicle333	Vehicle334	Vehicle335	Vehicle336	Vehicle337	Vehicle338	Vehicle339	Vehicle340	Vehicle341	Vehicle342	Vehicle343	Vehicle344	Vehicle345	Vehicle346	Vehicle347	Vehicle348;
+set Hours 		:= 0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23 ;
+set Cluster		:= 1 	2	3	4	5	;
+
+
+set ClusterHouse [1	]:=	Household30	Household39	Household63	Household82	Household90	Household92	Household174	;																																																																																												
+set ClusterHouse [2	]:=	Household2	Household3	Household8	Household11	Household13	Household15	Household17	Household24	Household25	Household27	Household29	Household32	Household33	Household44	Household46	Household48	Household49	Household58	Household64	Household65	Household67	Household77	Household78	Household85	Household86	Household87	Household88	Household89	Household94	Household103	Household112	Household113	Household114	Household119	Household129	Household131	Household133	Household138	Household145	Household148	Household150	Household151	Household152	Household159	Household160	Household162	Household163	Household165	Household166	Household167	Household170	Household171	Household172	Household175	Household176	Household180	Household190	Household196 ;																																										
+set ClusterHouse [3	]:=	Household34	Household43	Household62	Household72	Household76	Household110	Household134	Household144	Household199	;																																																																																										
+set ClusterHouse [4	]:=	Household5	Household12	Household50	Household55	Household57	Household61	Household66	Household81	Household83	Household84	Household93	Household96	Household116	Household118	Household123	Household137	Household139	Household143	Household146	Household149	Household154	Household155	Household158	Household179	Household186	Household192	Household198	;																																																																									
+set ClusterHouse [5	]:=	Household1	Household4	Household6	Household7	Household9	Household10	Household14	Household16	Household18	Household19	Household20	Household21	Household22	Household23	Household26	Household28	Household31	Household35	Household36	Household37	Household38	Household40	Household41	Household42	Household45	Household47	Household51	Household52	Household53	Household54	Household56	Household59	Household60	Household68	Household69	Household70	Household71	Household73	Household74	Household75	Household79	Household80	Household91	Household95	Household97	Household98	Household99	Household100	Household101	Household102	Household104	Household105	Household106	Household107	Household108	Household109	Household111	Household115	Household117	Household120	Household121	Household122	Household124	Household125	Household126	Household127	Household128	Household130	Household132	Household135	Household136	Household140	Household141	Household142	Household147	Household153	Household156	Household157	Household161	Household164	Household168	Household169	Household173	Household177	Household178	Household181	Household182	Household183	Household184	Household185	Household187	Household188	Household189	Household191	Household193	Household194	Household195	Household197	Household200	;	
+
+
+param  Energy_price :=
+0	0.01322
+1	0.01064
+2	0.00925
+3	0.00821
+4	0.009
+5	0.00883
+6	0.00912
+7	0.01288
+8	0.01514
+9	0.01669
+10	0.01927
+11	0.01976
+12	0.01978
+13	0.02021
+14	0.02156
+15	0.02116
+16	0.02175
+17	0.02883
+18	0.03114
+19	0.02453
+20	0.02133
+21	0.01933
+22	0.01885
+23	0.01456 ;
+
+param : DemandHousehold :=
+Household1	17.11630333
+Household2	31.06344667
+Household3	24.825125
+Household4	19.67957167
+Household5	24.49689167
+Household6	30.48813167
+Household7	25.79314167
+Household8	28.41518333
+Household9	19.852445
+Household10	15.503865
+Household11	16.86978
+Household12	27.07399333
+Household13	27.7864
+Household14	18.56414667
+Household15	26.58994
+Household16	15.18752167
+Household17	22.84929833
+Household18	24.94414667
+Household19	13.73098667
+Household20	22.89883
+Household21	15.17807333
+Household22	19.05953333
+Household23	21.100885
+Household24	23.01490667
+Household25	26.42095167
+Household26	19.06135333
+Household27	20.04665167
+Household28	20.380635
+Household29	26.02954833
+Household30	70.67915333
+Household31	26.22472333
+Household32	31.83661667
+Household33	35.614015
+Household34	39.62224167
+Household35	24.003675
+Household36	22.14924333
+Household37	28.762415
+Household38	21.607525
+Household39	66.933315
+Household40	22.10499833
+Household41	32.47552833
+Household42	17.695525
+Household43	35.67687667
+Household44	28.08437167
+Household45	12.821215
+Household46	22.08360833
+Household47	20.24449
+Household48	20.73036
+Household49	26.18467
+Household50	37.018335
+Household51	21.60099
+Household52	22.91573
+Household53	29.51176667
+Household54	29.817015
+Household55	26.65926
+Household56	22.99888
+Household57	29.43592833
+Household58	25.47466333
+Household59	16.48876
+Household60	17.847395
+Household61	30.39310667
+Household62	42.13153167
+Household63	45.87528167
+Household64	23.16412167
+Household65	28.18616833
+Household66	24.02462333
+Household67	27.10534667
+Household68	13.423385
+Household69	15.54230167
+Household70	18.54397167
+Household71	20.13175333
+Household72	41.32267167
+Household73	17.77728167
+Household74	20.96459
+Household75	19.19271
+Household76	50.48862333
+Household77	29.90613833
+Household78	11.6575
+Household79	12.74335833
+Household80	19.23724
+Household81	35.79110833
+Household82	50.23934333
+Household83	29.91766667
+Household84	31.28458667
+Household85	23.59430833
+Household86	27.099215
+Household87	36.18343333
+Household88	34.99594333
+Household89	23.65621167
+Household90	43.84549
+Household91	28.80388833
+Household92	70.35082667
+Household93	45.93557167
+Household94	37.95915833
+Household95	25.15787333
+Household96	43.10313667
+Household97	13.52122833
+Household98	29.15997667
+Household99	19.74499167
+Household100	14.15471
+Household101	20.968355
+Household102	20.50713167
+Household103	27.65939833
+Household104	12.21761167
+Household105	20.74955833
+Household106	17.99642
+Household107	21.62333333
+Household108	16.67761333
+Household109	23.95331167
+Household110	38.02002167
+Household111	22.024325
+Household112	24.31244167
+Household113	35.39403833
+Household114	16.62535667
+Household115	20.27127333
+Household116	29.69392167
+Household117	17.28783833
+Household118	29.09601333
+Household119	33.24034167
+Household120	14.695625
+Household121	20.32829
+Household122	23.81288
+Household123	30.35927833
+Household124	23.93541167
+Household125	16.98619167
+Household126	25.59566
+Household127	16.95956333
+Household128	18.214045
+Household129	28.00713833
+Household130	27.90414833
+Household131	23.73028333
+Household132	15.53577333
+Household133	30.12462
+Household134	41.771025
+Household135	35.28247333
+Household136	14.97148333
+Household137	34.87146833
+Household138	25.191825
+Household139	34.518345
+Household140	16.45837667
+Household141	18.32217
+Household142	21.41620667
+Household143	24.77016
+Household144	42.639015
+Household145	22.871285
+Household146	20.67293
+Household147	15.00753
+Household148	21.27688667
+Household149	32.15942833
+Household150	34.74618833
+Household151	34.77420667
+Household152	24.22278333
+Household153	26.27194
+Household154	35.48150167
+Household155	34.26795667
+Household156	21.52367833
+Household157	16.33855333
+Household158	32.40360167
+Household159	24.85751833
+Household160	33.390575
+Household161	16.44204
+Household162	28.45726167
+Household163	35.53423667
+Household164	20.71098167
+Household165	22.18732333
+Household166	19.636625
+Household167	25.76979
+Household168	24.59222667
+Household169	16.700395
+Household170	24.94919167
+Household171	25.22994
+Household172	25.87666167
+Household173	17.66884167
+Household174	51.95183833
+Household175	25.65378667
+Household176	34.15779333
+Household177	15.79035333
+Household178	20.02174667
+Household179	32.29166
+Household180	25.22574
+Household181	14.29130833
+Household182	21.75647167
+Household183	21.059975
+Household184	21.52916667
+Household185	17.57046333
+Household186	29.36389667
+Household187	19.79795333
+Household188	19.49344
+Household189	16.13621833
+Household190	31.310805
+Household191	16.20852667
+Household192	29.142745
+Household193	18.53185
+Household194	19.46501167
+Household195	17.26196167
+Household196	32.05114167
+Household197	14.814945
+Household198	30.67626167
+Household199	41.08531
+Household200	23.12824333 ;
+
+
+param : SOC_Final :=
+Vehicle1	1
+Vehicle2	1
+Vehicle3	1
+Vehicle4	1
+Vehicle5	1
+Vehicle6	1
+Vehicle7	1
+Vehicle8	1
+Vehicle9	1
+Vehicle10	1
+Vehicle11	1
+Vehicle12	1
+Vehicle13	1
+Vehicle14	1
+Vehicle15	1
+Vehicle16	1
+Vehicle17	1
+Vehicle18	1
+Vehicle19	1
+Vehicle20	1
+Vehicle21	1
+Vehicle22	1
+Vehicle23	1
+Vehicle24	1
+Vehicle25	1
+Vehicle26	1
+Vehicle27	1
+Vehicle28	1
+Vehicle29	1
+Vehicle30	1
+Vehicle31	1
+Vehicle32	1
+Vehicle33	1
+Vehicle34	1
+Vehicle35	1
+Vehicle36	1
+Vehicle37	1
+Vehicle38	1
+Vehicle39	1
+Vehicle40	1
+Vehicle41	1
+Vehicle42	1
+Vehicle43	1
+Vehicle44	1
+Vehicle45	1
+Vehicle46	1
+Vehicle47	1
+Vehicle48	1
+Vehicle49	1
+Vehicle50	1
+Vehicle51	1
+Vehicle52	1
+Vehicle53	1
+Vehicle54	1
+Vehicle55	1
+Vehicle56	1
+Vehicle57	1
+Vehicle58	1
+Vehicle59	1
+Vehicle60	1
+Vehicle61	1
+Vehicle62	1
+Vehicle63	1
+Vehicle64	1
+Vehicle65	1
+Vehicle66	1
+Vehicle67	1
+Vehicle68	1
+Vehicle69	1
+Vehicle70	1
+Vehicle71	1
+Vehicle72	1
+Vehicle73	1
+Vehicle74	1
+Vehicle75	1
+Vehicle76	1
+Vehicle77	1
+Vehicle78	1
+Vehicle79	1
+Vehicle80	1
+Vehicle81	1
+Vehicle82	1
+Vehicle83	1
+Vehicle84	1
+Vehicle85	1
+Vehicle86	1
+Vehicle87	1
+Vehicle88	1
+Vehicle89	1
+Vehicle90	1
+Vehicle91	1
+Vehicle92	1
+Vehicle93	1
+Vehicle94	1
+Vehicle95	1
+Vehicle96	1
+Vehicle97	1
+Vehicle98	1
+Vehicle99	1
+Vehicle100	1
+Vehicle101	1
+Vehicle102	1
+Vehicle103	1
+Vehicle104	1
+Vehicle105	1
+Vehicle106	1
+Vehicle107	1
+Vehicle108	1
+Vehicle109	1
+Vehicle110	1
+Vehicle111	1
+Vehicle112	1
+Vehicle113	1
+Vehicle114	1
+Vehicle115	1
+Vehicle116	1
+Vehicle117	1
+Vehicle118	1
+Vehicle119	1
+Vehicle120	1
+Vehicle121	1
+Vehicle122	1
+Vehicle123	1
+Vehicle124	1
+Vehicle125	1
+Vehicle126	1
+Vehicle127	1
+Vehicle128	1
+Vehicle129	1
+Vehicle130	1
+Vehicle131	1
+Vehicle132	1
+Vehicle133	1
+Vehicle134	1
+Vehicle135	1
+Vehicle136	1
+Vehicle137	1
+Vehicle138	1
+Vehicle139	1
+Vehicle140	1
+Vehicle141	1
+Vehicle142	1
+Vehicle143	1
+Vehicle144	1
+Vehicle145	1
+Vehicle146	1
+Vehicle147	1
+Vehicle148	1
+Vehicle149	1
+Vehicle150	1
+Vehicle151	1
+Vehicle152	1
+Vehicle153	1
+Vehicle154	1
+Vehicle155	1
+Vehicle156	1
+Vehicle157	1
+Vehicle158	1
+Vehicle159	1
+Vehicle160	1
+Vehicle161	1
+Vehicle162	1
+Vehicle163	1
+Vehicle164	1
+Vehicle165	1
+Vehicle166	1
+Vehicle167	1
+Vehicle168	1
+Vehicle169	1
+Vehicle170	1
+Vehicle171	1
+Vehicle172	1
+Vehicle173	1
+Vehicle174	1
+Vehicle175	1
+Vehicle176	1
+Vehicle177	1
+Vehicle178	1
+Vehicle179	1
+Vehicle180	1
+Vehicle181	1
+Vehicle182	1
+Vehicle183	1
+Vehicle184	1
+Vehicle185	1
+Vehicle186	1
+Vehicle187	1
+Vehicle188	1
+Vehicle189	1
+Vehicle190	1
+Vehicle191	1
+Vehicle192	1
+Vehicle193	1
+Vehicle194	1
+Vehicle195	1
+Vehicle196	1
+Vehicle197	1
+Vehicle198	1
+Vehicle199	1
+Vehicle200	1
+Vehicle201	1
+Vehicle202	1
+Vehicle203	1
+Vehicle204	1
+Vehicle205	1
+Vehicle206	1
+Vehicle207	1
+Vehicle208	1
+Vehicle209	1
+Vehicle210	1
+Vehicle211	1
+Vehicle212	1
+Vehicle213	1
+Vehicle214	1
+Vehicle215	1
+Vehicle216	1
+Vehicle217	1
+Vehicle218	1
+Vehicle219	1
+Vehicle220	1
+Vehicle221	1
+Vehicle222	1
+Vehicle223	1
+Vehicle224	1
+Vehicle225	1
+Vehicle226	1
+Vehicle227	1
+Vehicle228	1
+Vehicle229	1
+Vehicle230	1
+Vehicle231	1
+Vehicle232	1
+Vehicle233	1
+Vehicle234	1
+Vehicle235	1
+Vehicle236	1
+Vehicle237	1
+Vehicle238	1
+Vehicle239	1
+Vehicle240	1
+Vehicle241	1
+Vehicle242	1
+Vehicle243	1
+Vehicle244	1
+Vehicle245	1
+Vehicle246	1
+Vehicle247	1
+Vehicle248	1
+Vehicle249	1
+Vehicle250	1
+Vehicle251	1
+Vehicle252	1
+Vehicle253	1
+Vehicle254	1
+Vehicle255	1
+Vehicle256	1
+Vehicle257	1
+Vehicle258	1
+Vehicle259	1
+Vehicle260	1
+Vehicle261	1
+Vehicle262	1
+Vehicle263	1
+Vehicle264	1
+Vehicle265	1
+Vehicle266	1
+Vehicle267	1
+Vehicle268	1
+Vehicle269	1
+Vehicle270	1
+Vehicle271	1
+Vehicle272	1
+Vehicle273	1
+Vehicle274	1
+Vehicle275	1
+Vehicle276	1
+Vehicle277	1
+Vehicle278	1
+Vehicle279	1
+Vehicle280	1
+Vehicle281	1
+Vehicle282	1
+Vehicle283	1
+Vehicle284	1
+Vehicle285	1
+Vehicle286	1
+Vehicle287	1
+Vehicle288	1
+Vehicle289	1
+Vehicle290	1
+Vehicle291	1
+Vehicle292	1
+Vehicle293	1
+Vehicle294	1
+Vehicle295	1
+Vehicle296	1
+Vehicle297	1
+Vehicle298	1
+Vehicle299	1
+Vehicle300	1
+Vehicle301	1
+Vehicle302	1
+Vehicle303	1
+Vehicle304	1
+Vehicle305	1
+Vehicle306	1
+Vehicle307	1
+Vehicle308	1
+Vehicle309	1
+Vehicle310	1
+Vehicle311	1
+Vehicle312	1
+Vehicle313	1
+Vehicle314	1
+Vehicle315	1
+Vehicle316	1
+Vehicle317	1
+Vehicle318	1
+Vehicle319	1
+Vehicle320	1
+Vehicle321	1
+Vehicle322	1
+Vehicle323	1
+Vehicle324	1
+Vehicle325	1
+Vehicle326	1
+Vehicle327	1
+Vehicle328	1
+Vehicle329	1
+Vehicle330	1
+Vehicle331	1
+Vehicle332	1
+Vehicle333	1
+Vehicle334	1
+Vehicle335	1
+Vehicle336	1
+Vehicle337	1
+Vehicle338	1
+Vehicle339	1
+Vehicle340	1
+Vehicle341	1
+Vehicle342	1
+Vehicle343	1
+Vehicle344	1
+Vehicle345	1
+Vehicle346	1
+Vehicle347	1
+Vehicle348	1 ;
+
+
+
+
+
+param : Demand :=
+Vehicle1	3.84
+Vehicle2	0
+Vehicle3	0
+Vehicle4	0
+Vehicle5	7.36
+Vehicle6	7.68
+Vehicle7	1.92
+Vehicle8	6.08
+Vehicle9	0
+Vehicle10	3.2
+Vehicle11	9.6
+Vehicle12	0
+Vehicle13	15.04
+Vehicle14	4.16
+Vehicle15	1.6
+Vehicle16	8.32
+Vehicle17	5.76
+Vehicle18	13.12
+Vehicle19	10.24
+Vehicle20	2.56
+Vehicle21	11.2
+Vehicle22	26.24
+Vehicle23	1.6
+Vehicle24	5.12
+Vehicle25	11.2
+Vehicle26	0.64
+Vehicle27	18.24
+Vehicle28	1.92
+Vehicle29	8.96
+Vehicle30	8
+Vehicle31	2.88
+Vehicle32	16.64
+Vehicle33	0.64
+Vehicle34	5.76
+Vehicle35	13.12
+Vehicle36	12.8
+Vehicle37	2.56
+Vehicle38	5.44
+Vehicle39	14.08
+Vehicle40	0
+Vehicle41	2.56
+Vehicle42	0
+Vehicle43	13.12
+Vehicle44	2.88
+Vehicle45	7.04
+Vehicle46	0
+Vehicle47	0
+Vehicle48	0
+Vehicle49	5.44
+Vehicle50	3.2
+Vehicle51	5.76
+Vehicle52	0
+Vehicle53	1.6
+Vehicle54	3.2
+Vehicle55	7.36
+Vehicle56	7.04
+Vehicle57	3.2
+Vehicle58	2.56
+Vehicle59	0
+Vehicle60	14.4
+Vehicle61	3.52
+Vehicle62	9.92
+Vehicle63	0
+Vehicle64	8.32
+Vehicle65	8.64
+Vehicle66	3.84
+Vehicle67	32
+Vehicle68	1.92
+Vehicle69	9.92
+Vehicle70	4.8
+Vehicle71	6.08
+Vehicle72	2.88
+Vehicle73	4.48
+Vehicle74	0.64
+Vehicle75	8
+Vehicle76	6.4
+Vehicle77	0.96
+Vehicle78	6.4
+Vehicle79	15.36
+Vehicle80	0
+Vehicle81	1.6
+Vehicle82	2.56
+Vehicle83	1.6
+Vehicle84	12.48
+Vehicle85	0
+Vehicle86	1.6
+Vehicle87	0
+Vehicle88	2.56
+Vehicle89	2.56
+Vehicle90	7.68
+Vehicle91	0.64
+Vehicle92	15.04
+Vehicle93	24.64
+Vehicle94	0.64
+Vehicle95	0
+Vehicle96	13.12
+Vehicle97	20.8
+Vehicle98	12.48
+Vehicle99	1.92
+Vehicle100	4.16
+Vehicle101	14.4
+Vehicle102	2.56
+Vehicle103	4.8
+Vehicle104	1.28
+Vehicle105	1.6
+Vehicle106	2.88
+Vehicle107	4.48
+Vehicle108	20.48
+Vehicle109	0
+Vehicle110	8
+Vehicle111	1.28
+Vehicle112	6.08
+Vehicle113	5.44
+Vehicle114	1.6
+Vehicle115	1.28
+Vehicle116	9.92
+Vehicle117	11.2
+Vehicle118	2.88
+Vehicle119	4.8
+Vehicle120	15.04
+Vehicle121	9.92
+Vehicle122	4.48
+Vehicle123	1.28
+Vehicle124	1.6
+Vehicle125	7.04
+Vehicle126	7.68
+Vehicle127	19.84
+Vehicle128	1.28
+Vehicle129	1.6
+Vehicle130	6.08
+Vehicle131	2.88
+Vehicle132	0.96
+Vehicle133	4.16
+Vehicle134	8.64
+Vehicle135	10.24
+Vehicle136	1.28
+Vehicle137	14.08
+Vehicle138	3.2
+Vehicle139	8.32
+Vehicle140	4.48
+Vehicle141	3.84
+Vehicle142	4.48
+Vehicle143	1.6
+Vehicle144	1.92
+Vehicle145	13.44
+Vehicle146	2.88
+Vehicle147	4.16
+Vehicle148	9.28
+Vehicle149	2.88
+Vehicle150	0.64
+Vehicle151	0.64
+Vehicle152	10.24
+Vehicle153	3.52
+Vehicle154	13.12
+Vehicle155	0.64
+Vehicle156	2.56
+Vehicle157	14.4
+Vehicle158	0
+Vehicle159	10.56
+Vehicle160	6.4
+Vehicle161	4.48
+Vehicle162	14.08
+Vehicle163	9.28
+Vehicle164	4.8
+Vehicle165	1.28
+Vehicle166	0
+Vehicle167	10.56
+Vehicle168	0
+Vehicle169	11.2
+Vehicle170	12.48
+Vehicle171	5.76
+Vehicle172	8
+Vehicle173	2.88
+Vehicle174	0.32
+Vehicle175	8.32
+Vehicle176	5.12
+Vehicle177	10.88
+Vehicle178	15.36
+Vehicle179	10.24
+Vehicle180	6.08
+Vehicle181	1.28
+Vehicle182	1.6
+Vehicle183	0.64
+Vehicle184	1.6
+Vehicle185	2.88
+Vehicle186	0
+Vehicle187	4.16
+Vehicle188	0
+Vehicle189	7.04
+Vehicle190	15.36
+Vehicle191	17.92
+Vehicle192	3.84
+Vehicle193	5.76
+Vehicle194	12.8
+Vehicle195	10.56
+Vehicle196	0.96
+Vehicle197	7.36
+Vehicle198	14.08
+Vehicle199	0
+Vehicle200	1.6
+Vehicle201	11.84
+Vehicle202	1.6
+Vehicle203	2.24
+Vehicle204	1.28
+Vehicle205	0.64
+Vehicle206	0
+Vehicle207	5.76
+Vehicle208	8.32
+Vehicle209	8.32
+Vehicle210	4.48
+Vehicle211	0.96
+Vehicle212	0
+Vehicle213	1.28
+Vehicle214	8.32
+Vehicle215	5.44
+Vehicle216	0
+Vehicle217	11.2
+Vehicle218	1.6
+Vehicle219	1.6
+Vehicle220	3.84
+Vehicle221	11.84
+Vehicle222	22.4
+Vehicle223	16
+Vehicle224	8
+Vehicle225	5.12
+Vehicle226	12.16
+Vehicle227	3.2
+Vehicle228	14.08
+Vehicle229	0
+Vehicle230	13.12
+Vehicle231	10.24
+Vehicle232	12.48
+Vehicle233	8.64
+Vehicle234	2.24
+Vehicle235	3.2
+Vehicle236	6.4
+Vehicle237	9.92
+Vehicle238	0
+Vehicle239	11.84
+Vehicle240	13.76
+Vehicle241	2.56
+Vehicle242	3.52
+Vehicle243	1.6
+Vehicle244	9.28
+Vehicle245	8.32
+Vehicle246	13.76
+Vehicle247	3.2
+Vehicle248	3.84
+Vehicle249	0.96
+Vehicle250	9.92
+Vehicle251	0.64
+Vehicle252	18.56
+Vehicle253	6.4
+Vehicle254	9.28
+Vehicle255	3.2
+Vehicle256	0
+Vehicle257	0
+Vehicle258	14.4
+Vehicle259	1.28
+Vehicle260	0.64
+Vehicle261	3.52
+Vehicle262	4.8
+Vehicle263	4.8
+Vehicle264	5.44
+Vehicle265	0
+Vehicle266	24.32
+Vehicle267	10.24
+Vehicle268	8.32
+Vehicle269	13.44
+Vehicle270	3.52
+Vehicle271	3.52
+Vehicle272	7.68
+Vehicle273	2.56
+Vehicle274	10.88
+Vehicle275	2.56
+Vehicle276	1.28
+Vehicle277	1.6
+Vehicle278	6.72
+Vehicle279	5.44
+Vehicle280	11.2
+Vehicle281	11.52
+Vehicle282	0
+Vehicle283	10.24
+Vehicle284	4.48
+Vehicle285	0
+Vehicle286	4.48
+Vehicle287	8
+Vehicle288	7.04
+Vehicle289	2.24
+Vehicle290	7.36
+Vehicle291	3.84
+Vehicle292	9.6
+Vehicle293	3.52
+Vehicle294	5.44
+Vehicle295	6.08
+Vehicle296	9.92
+Vehicle297	0
+Vehicle298	2.56
+Vehicle299	7.36
+Vehicle300	6.08
+Vehicle301	11.52
+Vehicle302	3.2
+Vehicle303	9.92
+Vehicle304	14.08
+Vehicle305	1.28
+Vehicle306	8.32
+Vehicle307	13.76
+Vehicle308	5.12
+Vehicle309	1.28
+Vehicle310	0.64
+Vehicle311	3.2
+Vehicle312	0.64
+Vehicle313	0
+Vehicle314	2.56
+Vehicle315	0.96
+Vehicle316	9.28
+Vehicle317	0
+Vehicle318	0.96
+Vehicle319	16.32
+Vehicle320	4.48
+Vehicle321	18.24
+Vehicle322	5.44
+Vehicle323	8.32
+Vehicle324	1.92
+Vehicle325	0.64
+Vehicle326	4.16
+Vehicle327	8.64
+Vehicle328	4.8
+Vehicle329	6.08
+Vehicle330	20.48
+Vehicle331	13.12
+Vehicle332	19.2
+Vehicle333	4.48
+Vehicle334	3.2
+Vehicle335	3.52
+Vehicle336	4.48
+Vehicle337	2.24
+Vehicle338	16.64
+Vehicle339	15.04
+Vehicle340	0
+Vehicle341	0
+Vehicle342	0.64
+Vehicle343	10.24
+Vehicle344	5.12
+Vehicle345	11.52
+Vehicle346	8.96
+Vehicle347	0.96
+Vehicle348	9.92 ;
+
+
+set EVHousehold [	Household1	]:=	Vehicle1						;
+set EVHousehold [	Household2	]:=	Vehicle2	Vehicle3					;
+set EVHousehold [	Household3	]:=	Vehicle4						;
+set EVHousehold [	Household4	]:=	Vehicle5						;
+set EVHousehold [	Household5	]:=	Vehicle6						;
+set EVHousehold [	Household6	]:=	Vehicle7						;
+set EVHousehold [	Household7	]:=	Vehicle8	Vehicle9					;
+set EVHousehold [	Household8	]:=	Vehicle10	Vehicle11					;
+set EVHousehold [	Household9	]:=	Vehicle12						;
+set EVHousehold [	Household10	]:=	Vehicle13	Vehicle14					;
+set EVHousehold [	Household11	]:=	Vehicle15	Vehicle16					;
+set EVHousehold [	Household12	]:=	Vehicle17						;
+set EVHousehold [	Household13	]:=	Vehicle18						;
+set EVHousehold [	Household14	]:=	Vehicle19	Vehicle20					;
+set EVHousehold [	Household15	]:=	Vehicle21	Vehicle22					;
+set EVHousehold [	Household16	]:=	Vehicle23						;
+set EVHousehold [	Household17	]:=	Vehicle24						;
+set EVHousehold [	Household18	]:=	Vehicle25	Vehicle26	Vehicle27				;
+set EVHousehold [	Household19	]:=	Vehicle28						;
+set EVHousehold [	Household20	]:=	Vehicle29						;
+set EVHousehold [	Household21	]:=	Vehicle30	Vehicle31					;
+set EVHousehold [	Household22	]:=	Vehicle32						;
+set EVHousehold [	Household23	]:=	Vehicle33	Vehicle34	Vehicle35				;
+set EVHousehold [	Household24	]:=	Vehicle36	Vehicle37					;
+set EVHousehold [	Household25	]:=	Vehicle38	Vehicle39	Vehicle40				;
+set EVHousehold [	Household26	]:=	Vehicle41						;
+set EVHousehold [	Household27	]:=	Vehicle42	Vehicle43					;
+set EVHousehold [	Household28	]:=	Vehicle44	Vehicle45					;
+set EVHousehold [	Household29	]:=	Vehicle46						;
+set EVHousehold [	Household30	]:=	Vehicle47	Vehicle48	Vehicle49	Vehicle50	Vehicle51	Vehicle52	;
+set EVHousehold [	Household31	]:=	Vehicle53	Vehicle54					;
+set EVHousehold [	Household32	]:=	Vehicle55	Vehicle56					;
+set EVHousehold [	Household33	]:=	Vehicle57	Vehicle58	Vehicle59				;
+set EVHousehold [	Household34	]:=	Vehicle60	Vehicle61	Vehicle62	Vehicle63			;
+set EVHousehold [	Household35	]:=	Vehicle64	Vehicle65					;
+set EVHousehold [	Household36	]:=	Vehicle66						;
+set EVHousehold [	Household37	]:=	Vehicle67	Vehicle68					;
+set EVHousehold [	Household38	]:=	Vehicle69						;
+set EVHousehold [	Household39	]:=	Vehicle70	Vehicle71	Vehicle72				;
+set EVHousehold [	Household40	]:=	Vehicle73	Vehicle74					;
+set EVHousehold [	Household41	]:=	Vehicle75	Vehicle76					;
+set EVHousehold [	Household42	]:=	Vehicle77	Vehicle78					;
+set EVHousehold [	Household43	]:=	Vehicle79	Vehicle80					;
+set EVHousehold [	Household44	]:=	Vehicle82	Vehicle83	Vehicle81				;
+set EVHousehold [	Household45	]:=	Vehicle84						;
+set EVHousehold [	Household46	]:=	Vehicle85	Vehicle86					;
+set EVHousehold [	Household47	]:=	Vehicle87						;
+set EVHousehold [	Household48	]:=	Vehicle88	Vehicle89	Vehicle90				;
+set EVHousehold [	Household49	]:=	Vehicle91	Vehicle92					;
+set EVHousehold [	Household50	]:=	Vehicle93	Vehicle94					;
+set EVHousehold [	Household51	]:=	Vehicle95	Vehicle96					;
+set EVHousehold [	Household52	]:=	Vehicle97	Vehicle98					;
+set EVHousehold [	Household53	]:=	Vehicle99	Vehicle100					;
+set EVHousehold [	Household54	]:=	Vehicle101	Vehicle102					;
+set EVHousehold [	Household55	]:=	Vehicle103	Vehicle104					;
+set EVHousehold [	Household56	]:=	Vehicle105						;
+set EVHousehold [	Household57	]:=	Vehicle106	Vehicle107	Vehicle108				;
+set EVHousehold [	Household58	]:=	Vehicle109	Vehicle110					;
+set EVHousehold [	Household59	]:=	Vehicle111						;
+set EVHousehold [	Household60	]:=	Vehicle112						;
+set EVHousehold [	Household61	]:=	Vehicle113						;
+set EVHousehold [	Household62	]:=	Vehicle114	Vehicle115					;
+set EVHousehold [	Household63	]:=	Vehicle116	Vehicle117					;
+set EVHousehold [	Household64	]:=	Vehicle118	Vehicle119					;
+set EVHousehold [	Household65	]:=	Vehicle120						;
+set EVHousehold [	Household66	]:=	Vehicle121						;
+set EVHousehold [	Household67	]:=	Vehicle122	Vehicle123					;
+set EVHousehold [	Household68	]:=	Vehicle124						;
+set EVHousehold [	Household69	]:=	Vehicle125						;
+set EVHousehold [	Household70	]:=	Vehicle126	Vehicle127					;
+set EVHousehold [	Household71	]:=	Vehicle128						;
+set EVHousehold [	Household72	]:=	Vehicle129						;
+set EVHousehold [	Household73	]:=	Vehicle130	Vehicle131					;
+set EVHousehold [	Household74	]:=	Vehicle132						;
+set EVHousehold [	Household75	]:=	Vehicle133	Vehicle134					;
+set EVHousehold [	Household76	]:=	Vehicle135	Vehicle136					;
+set EVHousehold [	Household77	]:=	Vehicle137	Vehicle138					;
+set EVHousehold [	Household78	]:=	Vehicle139						;
+set EVHousehold [	Household79	]:=	Vehicle140						;
+set EVHousehold [	Household80	]:=	Vehicle141						;
+set EVHousehold [	Household81	]:=	Vehicle142	Vehicle143	Vehicle144	Vehicle145	Vehicle146		;
+set EVHousehold [	Household82	]:=	Vehicle147	Vehicle148					;
+set EVHousehold [	Household83	]:=	Vehicle149	Vehicle150					;
+set EVHousehold [	Household84	]:=	Vehicle151						;
+set EVHousehold [	Household85	]:=	Vehicle152	Vehicle153					;
+set EVHousehold [	Household86	]:=	Vehicle154	Vehicle155					;
+set EVHousehold [	Household87	]:=	Vehicle156	Vehicle157	Vehicle158				;
+set EVHousehold [	Household88	]:=	Vehicle159	Vehicle160	Vehicle161				;
+set EVHousehold [	Household89	]:=	Vehicle162	Vehicle163					;
+set EVHousehold [	Household90	]:=	Vehicle164						;
+set EVHousehold [	Household91	]:=	Vehicle165	Vehicle166					;
+set EVHousehold [	Household92	]:=	Vehicle167	Vehicle168	Vehicle169	Vehicle170	Vehicle171	Vehicle172	;
+set EVHousehold [	Household93	]:=	Vehicle173	Vehicle174					;
+set EVHousehold [	Household94	]:=	Vehicle175	Vehicle176					;
+set EVHousehold [	Household95	]:=	Vehicle177	Vehicle178					;
+set EVHousehold [	Household96	]:=	Vehicle179	Vehicle180	Vehicle181				;
+set EVHousehold [	Household97	]:=	Vehicle182	Vehicle183					;
+set EVHousehold [	Household98	]:=	Vehicle184	Vehicle185					;
+set EVHousehold [	Household99	]:=	Vehicle186						;
+set EVHousehold [	Household100	]:=	Vehicle187						;
+set EVHousehold [	Household101	]:=	Vehicle188						;
+set EVHousehold [	Household102	]:=	Vehicle189						;
+set EVHousehold [	Household103	]:=	Vehicle190	Vehicle191					;
+set EVHousehold [	Household104	]:=	Vehicle192						;
+set EVHousehold [	Household105	]:=	Vehicle193	Vehicle194					;
+set EVHousehold [	Household106	]:=	Vehicle195						;
+set EVHousehold [	Household107	]:=	Vehicle196						;
+set EVHousehold [	Household108	]:=	Vehicle197	Vehicle198					;
+set EVHousehold [	Household109	]:=	Vehicle199						;
+set EVHousehold [	Household110	]:=	Vehicle200	Vehicle201					;
+set EVHousehold [	Household111	]:=	Vehicle202						;
+set EVHousehold [	Household112	]:=	Vehicle203						;
+set EVHousehold [	Household113	]:=	Vehicle204	Vehicle205					;
+set EVHousehold [	Household114	]:=	Vehicle206	Vehicle207					;
+set EVHousehold [	Household115	]:=	Vehicle208						;
+set EVHousehold [	Household116	]:=	Vehicle209	Vehicle210					;
+set EVHousehold [	Household117	]:=	Vehicle211	Vehicle212					;
+set EVHousehold [	Household118	]:=	Vehicle213	Vehicle214					;
+set EVHousehold [	Household119	]:=	Vehicle215	Vehicle216					;
+set EVHousehold [	Household120	]:=	Vehicle217	Vehicle218					;
+set EVHousehold [	Household121	]:=	Vehicle219	Vehicle220					;
+set EVHousehold [	Household122	]:=	Vehicle221						;
+set EVHousehold [	Household123	]:=	Vehicle222	Vehicle223					;
+set EVHousehold [	Household124	]:=	Vehicle224	Vehicle225					;
+set EVHousehold [	Household125	]:=	Vehicle226						;
+set EVHousehold [	Household126	]:=	Vehicle227	Vehicle228					;
+set EVHousehold [	Household127	]:=	Vehicle229						;
+set EVHousehold [	Household128	]:=	Vehicle230						;
+set EVHousehold [	Household129	]:=	Vehicle231	Vehicle232					;
+set EVHousehold [	Household130	]:=	Vehicle233	Vehicle234					;
+set EVHousehold [	Household131	]:=	Vehicle235	Vehicle236	Vehicle237				;
+set EVHousehold [	Household132	]:=	Vehicle238						;
+set EVHousehold [	Household133	]:=	Vehicle239						;
+set EVHousehold [	Household134	]:=	Vehicle240	Vehicle241	Vehicle242				;
+set EVHousehold [	Household135	]:=	Vehicle243	Vehicle244					;
+set EVHousehold [	Household136	]:=	Vehicle245						;
+set EVHousehold [	Household137	]:=	Vehicle246						;
+set EVHousehold [	Household138	]:=	Vehicle247	Vehicle248					;
+set EVHousehold [	Household139	]:=	Vehicle249	Vehicle250					;
+set EVHousehold [	Household140	]:=	Vehicle251						;
+set EVHousehold [	Household141	]:=	Vehicle252	Vehicle253					;
+set EVHousehold [	Household142	]:=	Vehicle254	Vehicle255					;
+set EVHousehold [	Household143	]:=	Vehicle256	Vehicle257					;
+set EVHousehold [	Household144	]:=	Vehicle258	Vehicle259					;
+set EVHousehold [	Household145	]:=	Vehicle260						;
+set EVHousehold [	Household146	]:=	Vehicle261	Vehicle262					;
+set EVHousehold [	Household147	]:=	Vehicle263						;
+set EVHousehold [	Household148	]:=	Vehicle264						;
+set EVHousehold [	Household149	]:=	Vehicle265	Vehicle266					;
+set EVHousehold [	Household150	]:=	Vehicle267	Vehicle268					;
+set EVHousehold [	Household151	]:=	Vehicle269	Vehicle270	Vehicle271				;
+set EVHousehold [	Household152	]:=	Vehicle272	Vehicle273					;
+set EVHousehold [	Household153	]:=	Vehicle274						;
+set EVHousehold [	Household154	]:=	Vehicle275						;
+set EVHousehold [	Household155	]:=	Vehicle276	Vehicle277					;
+set EVHousehold [	Household156	]:=	Vehicle278						;
+set EVHousehold [	Household157	]:=	Vehicle279						;
+set EVHousehold [	Household158	]:=	Vehicle280	Vehicle281	Vehicle282	Vehicle283	Vehicle284		;
+set EVHousehold [	Household159	]:=	Vehicle285						;
+set EVHousehold [	Household160	]:=	Vehicle287	Vehicle288	Vehicle286				;
+set EVHousehold [	Household161	]:=	Vehicle289						;
+set EVHousehold [	Household162	]:=	Vehicle290	Vehicle291					;
+set EVHousehold [	Household163	]:=	Vehicle292						;
+set EVHousehold [	Household164	]:=	Vehicle293						;
+set EVHousehold [	Household165	]:=	Vehicle294	Vehicle295					;
+set EVHousehold [	Household166	]:=	Vehicle296						;
+set EVHousehold [	Household167	]:=	Vehicle297	Vehicle298					;
+set EVHousehold [	Household168	]:=	Vehicle299	Vehicle300					;
+set EVHousehold [	Household169	]:=	Vehicle301						;
+set EVHousehold [	Household170	]:=	Vehicle302	Vehicle303					;
+set EVHousehold [	Household171	]:=	Vehicle304	Vehicle305					;
+set EVHousehold [	Household172	]:=	Vehicle306						;
+set EVHousehold [	Household173	]:=	Vehicle307						;
+set EVHousehold [	Household174	]:=	Vehicle308	Vehicle309					;
+set EVHousehold [	Household175	]:=	Vehicle310	Vehicle311					;
+set EVHousehold [	Household176	]:=	Vehicle312	Vehicle313					;
+set EVHousehold [	Household177	]:=	Vehicle314						;
+set EVHousehold [	Household178	]:=	Vehicle315						;
+set EVHousehold [	Household179	]:=	Vehicle316	Vehicle317					;
+set EVHousehold [	Household180	]:=	Vehicle318	Vehicle319					;
+set EVHousehold [	Household181	]:=	Vehicle320						;
+set EVHousehold [	Household182	]:=	Vehicle321						;
+set EVHousehold [	Household183	]:=	Vehicle322	Vehicle323					;
+set EVHousehold [	Household184	]:=	Vehicle324						;
+set EVHousehold [	Household185	]:=	Vehicle325						;
+set EVHousehold [	Household186	]:=	Vehicle326	Vehicle327					;
+set EVHousehold [	Household187	]:=	Vehicle328						;
+set EVHousehold [	Household188	]:=	Vehicle329	Vehicle330					;
+set EVHousehold [	Household189	]:=	Vehicle331						;
+set EVHousehold [	Household190	]:=	Vehicle332	Vehicle333					;
+set EVHousehold [	Household191	]:=	Vehicle334						;
+set EVHousehold [	Household192	]:=	Vehicle335	Vehicle336					;
+set EVHousehold [	Household193	]:=	Vehicle337						;
+set EVHousehold [	Household194	]:=	Vehicle338	Vehicle339					;
+set EVHousehold [	Household195	]:=	Vehicle340						;
+set EVHousehold [	Household196	]:=	Vehicle341	Vehicle342					;
+set EVHousehold [	Household197	]:=	Vehicle343						;
+set EVHousehold [	Household198	]:=	Vehicle344						;
+set EVHousehold [	Household199	]:=	Vehicle345	Vehicle346					;
+set EVHousehold [	Household200	]:=	Vehicle347	Vehicle348					;
+
+
+
+param Consumer:
+			0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23 :=
+Vehicle1	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle2	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle3	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle4	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle5	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle6	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle7	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle8	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle9	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle10	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle11	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle12	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle13	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle14	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle15	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle16	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle17	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle18	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle19	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle20	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle21	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle22	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle23	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle24	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle25	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle26	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle27	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle28	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle29	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle30	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle31	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle32	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle33	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle34	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle35	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle36	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle37	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle38	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle39	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle40	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle41	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle42	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle43	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle44	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle45	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle46	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle47	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle48	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle49	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle50	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle51	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle52	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle53	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle54	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle55	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle56	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle57	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle58	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle59	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle60	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle61	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle62	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle63	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle64	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle65	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle66	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle67	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle68	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle69	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle70	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle71	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle72	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle73	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle74	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle75	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle76	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle77	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle78	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle79	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle80	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle81	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle82	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle83	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle84	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle85	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle86	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle87	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle88	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle89	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle90	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle91	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle92	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle93	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle94	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle95	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle96	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle97	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle98	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle99	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle100	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle101	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle102	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle103	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle104	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle105	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle106	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle107	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle108	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle109	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle110	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle111	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle112	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle113	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle114	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle115	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle116	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle117	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle118	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle119	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle120	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle121	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle122	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle123	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle124	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle125	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle126	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle127	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle128	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle129	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle130	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle131	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle132	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle133	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle134	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle135	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle136	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle137	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle138	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle139	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle140	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle141	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle142	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle143	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle144	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle145	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle146	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle147	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle148	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle149	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle150	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle151	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle152	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle153	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle154	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle155	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle156	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle157	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle158	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle159	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle160	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle161	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle162	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle163	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle164	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle165	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle166	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle167	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle168	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle169	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle170	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle171	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle172	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle173	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle174	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle175	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle176	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle177	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle178	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle179	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle180	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle181	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle182	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle183	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle184	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle185	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle186	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle187	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle188	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle189	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle190	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle191	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle192	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle193	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle194	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle195	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle196	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle197	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle198	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle199	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle200	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle201	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle202	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle203	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle204	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle205	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle206	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle207	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle208	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle209	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle210	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle211	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle212	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle213	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle214	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle215	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle216	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle217	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle218	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle219	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle220	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle221	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle222	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle223	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle224	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle225	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle226	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle227	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle228	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle229	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle230	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle231	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle232	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle233	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle234	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle235	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle236	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle237	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle238	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle239	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle240	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle241	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle242	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle243	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle244	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle245	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle246	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle247	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle248	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle249	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle250	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle251	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle252	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle253	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle254	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle255	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle256	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle257	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle258	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle259	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle260	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle261	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle262	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle263	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle264	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle265	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle266	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle267	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle268	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle269	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle270	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle271	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle272	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle273	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle274	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle275	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle276	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle277	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle278	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle279	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle280	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle281	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle282	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle283	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle284	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle285	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle286	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle287	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle288	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle289	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle290	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle291	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle292	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle293	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle294	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle295	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle296	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle297	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle298	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle299	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle300	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle301	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle302	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle303	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle304	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle305	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle306	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle307	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle308	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle309	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle310	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle311	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle312	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle313	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle314	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle315	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle316	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle317	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle318	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle319	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle320	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle321	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle322	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle323	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle324	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle325	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle326	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle327	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle328	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle329	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle330	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle331	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle332	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle333	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle334	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle335	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle336	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle337	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle338	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle339	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle340	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle341	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle342	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle343	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle344	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle345	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle346	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle347	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0
+Vehicle348	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0 ;
+
+
+param : Charger:=
+Vehicle1	2
+Vehicle2	2
+Vehicle3	2
+Vehicle4	2
+Vehicle5	2
+Vehicle6	2
+Vehicle7	2
+Vehicle8	2
+Vehicle9	2
+Vehicle10	2
+Vehicle11	2
+Vehicle12	2
+Vehicle13	2
+Vehicle14	2
+Vehicle15	2
+Vehicle16	2
+Vehicle17	2
+Vehicle18	2
+Vehicle19	2
+Vehicle20	2
+Vehicle21	2
+Vehicle22	2
+Vehicle23	2
+Vehicle24	2
+Vehicle25	2
+Vehicle26	2
+Vehicle27	2
+Vehicle28	2
+Vehicle29	2
+Vehicle30	2
+Vehicle31	2
+Vehicle32	2
+Vehicle33	2
+Vehicle34	2
+Vehicle35	2
+Vehicle36	2
+Vehicle37	2
+Vehicle38	2
+Vehicle39	2
+Vehicle40	2
+Vehicle41	2
+Vehicle42	2
+Vehicle43	2
+Vehicle44	2
+Vehicle45	2
+Vehicle46	2
+Vehicle47	2
+Vehicle48	2
+Vehicle49	2
+Vehicle50	2
+Vehicle51	2
+Vehicle52	2
+Vehicle53	2
+Vehicle54	2
+Vehicle55	2
+Vehicle56	2
+Vehicle57	2
+Vehicle58	2
+Vehicle59	2
+Vehicle60	2
+Vehicle61	2
+Vehicle62	2
+Vehicle63	2
+Vehicle64	2
+Vehicle65	2
+Vehicle66	2
+Vehicle67	2
+Vehicle68	2
+Vehicle69	2
+Vehicle70	2
+Vehicle71	2
+Vehicle72	2
+Vehicle73	2
+Vehicle74	2
+Vehicle75	2
+Vehicle76	2
+Vehicle77	2
+Vehicle78	2
+Vehicle79	2
+Vehicle80	2
+Vehicle81	2
+Vehicle82	2
+Vehicle83	2
+Vehicle84	2
+Vehicle85	2
+Vehicle86	2
+Vehicle87	2
+Vehicle88	2
+Vehicle89	2
+Vehicle90	2
+Vehicle91	2
+Vehicle92	2
+Vehicle93	2
+Vehicle94	2
+Vehicle95	2
+Vehicle96	2
+Vehicle97	2
+Vehicle98	2
+Vehicle99	2
+Vehicle100	2
+Vehicle101	2
+Vehicle102	2
+Vehicle103	2
+Vehicle104	2
+Vehicle105	2
+Vehicle106	2
+Vehicle107	2
+Vehicle108	2
+Vehicle109	2
+Vehicle110	2
+Vehicle111	2
+Vehicle112	2
+Vehicle113	2
+Vehicle114	2
+Vehicle115	2
+Vehicle116	2
+Vehicle117	2
+Vehicle118	2
+Vehicle119	2
+Vehicle120	2
+Vehicle121	2
+Vehicle122	2
+Vehicle123	2
+Vehicle124	2
+Vehicle125	2
+Vehicle126	2
+Vehicle127	2
+Vehicle128	2
+Vehicle129	2
+Vehicle130	2
+Vehicle131	2
+Vehicle132	2
+Vehicle133	2
+Vehicle134	2
+Vehicle135	2
+Vehicle136	2
+Vehicle137	2
+Vehicle138	2
+Vehicle139	2
+Vehicle140	2
+Vehicle141	2
+Vehicle142	2
+Vehicle143	2
+Vehicle144	2
+Vehicle145	2
+Vehicle146	2
+Vehicle147	2
+Vehicle148	2
+Vehicle149	2
+Vehicle150	2
+Vehicle151	2
+Vehicle152	2
+Vehicle153	2
+Vehicle154	2
+Vehicle155	2
+Vehicle156	2
+Vehicle157	2
+Vehicle158	2
+Vehicle159	2
+Vehicle160	2
+Vehicle161	2
+Vehicle162	2
+Vehicle163	2
+Vehicle164	2
+Vehicle165	2
+Vehicle166	2
+Vehicle167	2
+Vehicle168	2
+Vehicle169	2
+Vehicle170	2
+Vehicle171	2
+Vehicle172	2
+Vehicle173	2
+Vehicle174	2
+Vehicle175	2
+Vehicle176	2
+Vehicle177	2
+Vehicle178	2
+Vehicle179	2
+Vehicle180	2
+Vehicle181	2
+Vehicle182	2
+Vehicle183	2
+Vehicle184	2
+Vehicle185	2
+Vehicle186	2
+Vehicle187	2
+Vehicle188	2
+Vehicle189	2
+Vehicle190	2
+Vehicle191	2
+Vehicle192	2
+Vehicle193	2
+Vehicle194	2
+Vehicle195	2
+Vehicle196	2
+Vehicle197	2
+Vehicle198	2
+Vehicle199	2
+Vehicle200	2
+Vehicle201	2
+Vehicle202	2
+Vehicle203	2
+Vehicle204	2
+Vehicle205	2
+Vehicle206	2
+Vehicle207	2
+Vehicle208	2
+Vehicle209	2
+Vehicle210	2
+Vehicle211	2
+Vehicle212	2
+Vehicle213	2
+Vehicle214	2
+Vehicle215	2
+Vehicle216	2
+Vehicle217	2
+Vehicle218	2
+Vehicle219	2
+Vehicle220	2
+Vehicle221	2
+Vehicle222	2
+Vehicle223	2
+Vehicle224	2
+Vehicle225	2
+Vehicle226	2
+Vehicle227	2
+Vehicle228	2
+Vehicle229	2
+Vehicle230	2
+Vehicle231	2
+Vehicle232	2
+Vehicle233	2
+Vehicle234	2
+Vehicle235	2
+Vehicle236	2
+Vehicle237	2
+Vehicle238	2
+Vehicle239	2
+Vehicle240	2
+Vehicle241	2
+Vehicle242	2
+Vehicle243	2
+Vehicle244	2
+Vehicle245	2
+Vehicle246	2
+Vehicle247	2
+Vehicle248	2
+Vehicle249	2
+Vehicle250	2
+Vehicle251	2
+Vehicle252	2
+Vehicle253	2
+Vehicle254	2
+Vehicle255	2
+Vehicle256	2
+Vehicle257	2
+Vehicle258	2
+Vehicle259	2
+Vehicle260	2
+Vehicle261	2
+Vehicle262	2
+Vehicle263	2
+Vehicle264	2
+Vehicle265	2
+Vehicle266	2
+Vehicle267	2
+Vehicle268	2
+Vehicle269	2
+Vehicle270	2
+Vehicle271	2
+Vehicle272	2
+Vehicle273	2
+Vehicle274	2
+Vehicle275	2
+Vehicle276	2
+Vehicle277	2
+Vehicle278	2
+Vehicle279	2
+Vehicle280	2
+Vehicle281	2
+Vehicle282	2
+Vehicle283	2
+Vehicle284	2
+Vehicle285	2
+Vehicle286	2
+Vehicle287	2
+Vehicle288	2
+Vehicle289	2
+Vehicle290	2
+Vehicle291	2
+Vehicle292	2
+Vehicle293	2
+Vehicle294	2
+Vehicle295	2
+Vehicle296	2
+Vehicle297	2
+Vehicle298	2
+Vehicle299	2
+Vehicle300	2
+Vehicle301	2
+Vehicle302	2
+Vehicle303	2
+Vehicle304	2
+Vehicle305	2
+Vehicle306	2
+Vehicle307	2
+Vehicle308	2
+Vehicle309	2
+Vehicle310	2
+Vehicle311	2
+Vehicle312	2
+Vehicle313	2
+Vehicle314	2
+Vehicle315	2
+Vehicle316	2
+Vehicle317	2
+Vehicle318	2
+Vehicle319	2
+Vehicle320	2
+Vehicle321	2
+Vehicle322	2
+Vehicle323	2
+Vehicle324	2
+Vehicle325	2
+Vehicle326	2
+Vehicle327	2
+Vehicle328	2
+Vehicle329	2
+Vehicle330	2
+Vehicle331	2
+Vehicle332	2
+Vehicle333	2
+Vehicle334	2
+Vehicle335	2
+Vehicle336	2
+Vehicle337	2
+Vehicle338	2
+Vehicle339	2
+Vehicle340	2
+Vehicle341	2
+Vehicle342	2
+Vehicle343	2
+Vehicle344	2
+Vehicle345	2
+Vehicle346	2
+Vehicle347	2
+Vehicle348	2 ;
+
+

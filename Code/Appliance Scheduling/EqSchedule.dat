@@ -1,0 +1,77 @@
+set Equipments := Furnace	CellarOutlets	FridgeRange	MasterLights	BedroomOutlets	BedroomLights	DuctHeater	KitchenLights	Dishwasher;
+set Hours := 0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23;
+
+param Energy_price:= 
+0	0.00001976
+1	0.00001828
+2	0.00001595
+3	0.00001545
+4	0.0000151
+5	0.00000778
+6	0.00001488
+7	0.00000725
+8	0.00001823
+9	0.00001655
+10	0.0000234
+11	0.00002247
+12	0.00003376
+13	0.00002172
+14	0.00002297
+15	0.00002397
+16	0.00002611
+17	0.00003861
+18	0.00003391
+19	0.00002094
+20	0.00001891
+21	0.00001643
+22	0.00001885
+23	0.0000165;
+
+
+param Consumer:
+0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23 :=
+Furnace	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+CellarOutlets	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+FridgeRange	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+MasterLights	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1
+BedroomOutlets	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1
+BedroomLights	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1
+DuctHeater	0	0	0	1	1	1	1	1	1	0	1	1	1	1	1	1	1	0	1	1	1	0	1	1	
+KitchenLights	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Dishwasher	1 	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0;
+
+
+
+param :  Demand  :=
+Furnace				166303.2
+CellarOutlets		104736.3167
+FridgeRange			1672.458553
+MasterLights		20409.26852
+BedroomOutlets		20409.26852
+BedroomLights		20409.26852
+DuctHeater			69.28252477
+KitchenLights		25.80430796
+Dishwasher			135.6215555 ;
+
+param :  Rating  :=
+Furnace			7000
+CellarOutlets	8000
+FridgeRange		1200
+MasterLights	2000
+BedroomOutlets	2500
+BedroomLights	2000
+DuctHeater		3000
+KitchenLights	10
+Dishwasher		45;
+
+param :  Flexibility  :=
+Furnace			0
+CellarOutlets	1
+FridgeRange		0
+MasterLights	1
+BedroomOutlets	1
+BedroomLights	1
+DuctHeater		1
+KitchenLights	0
+Dishwasher		1;
+
